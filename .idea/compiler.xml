@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="module-common" />
+        <module name="module-production" />
+        <module name="module-master" />
+        <module name="pigfarm-service" />
+        <module name="pigfarm-web" />
+        <module name="module-weighing" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="module-common" options="-parameters" />
+      <module name="module-master" options="-parameters" />
+      <module name="module-production" options="-parameters" />
+      <module name="module-weighing" options="-parameters" />
+      <module name="pigfarm-service" options="-parameters" />
+      <module name="pigfarm-web" options="-parameters" />
+    </option>
+  </component>
+</project>
